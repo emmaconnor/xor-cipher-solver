@@ -2,9 +2,8 @@
 #
 # By Joseph Connor
 #
-# This script attempts to break a simple repeating XOR cipher
-# using basic frequency analysis.
-
+# This script reads a hex-encoded repeating-XOR ciphertext on stdin
+# and attempts to find the plaintext with basic frequency analysis
 
 from __future__ import division
 from string import ascii_lowercase
