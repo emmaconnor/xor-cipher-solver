@@ -6,8 +6,10 @@
 # using basic frequency analysis.
 
 
-import sys
+from __future__ import division
 from string import ascii_lowercase
+
+import sys
 
 
 def enchunk(l, n):
@@ -35,7 +37,7 @@ def hamming(s1, s2):
 def avg_hamming(keylen, ciphertext):
     """Calculate average hamming distance in first two chunks of cipertext"""
     chunks = enchunk(ciphertext, keylen)[:-1]
-    return hamming(chunks[0], chunks[1]) / float(keylen)
+    return hamming(chunks[0], chunks[1]) / keylen
 
 
 def try_keylen(keylen, ciphertext):
