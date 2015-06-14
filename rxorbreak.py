@@ -1,3 +1,11 @@
+# rxorbreak.py
+#
+# By Joseph Connor
+#
+# This script attempts to break a simple repeating XOR cipher
+# using basic frequency analysis.
+
+
 import sys
 from string import ascii_lowercase
 
